@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Github](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/ping-coming-soon-made-with-vue3-and-sass-UDz3Qah183)
+- Live Site URL: [Github](https://r3ygoski.github.io/ping-coming-soon-page-vue/)
 
 ## My process
 
@@ -44,6 +44,7 @@ Users should be able to:
 
 ### What I learned
 
+This project helped me a lot to understand more about Vue3, it's helped to understand how conditional render and v-models work.
 
 ## Author
 
