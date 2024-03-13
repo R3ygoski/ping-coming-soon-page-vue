@@ -48,6 +48,10 @@
         font-size: .5rem;
         color: var.$lightRed;
       }
+      &-success {
+        font-size: .5rem;
+        color: var.$lightGreen;
+      }
       &-btn {
         font-weight: 600;
         color: #fff;
@@ -132,7 +136,7 @@
           width: 48%;
           box-shadow: 8px 8px 15px rgba(0,0,0,.15);
         }
-        &-error {
+        &-error, &-success {
           font-size: .6rem;
           position: absolute;
           bottom: -30%;
@@ -154,6 +158,10 @@
 
     .input_error {
         outline: 2px solid var.$lightRed;
+        outline-offset: -2px;
+    }
+    .input_success {
+        outline: 2px solid var.$lightGreen;
         outline-offset: -2px;
     }
 
