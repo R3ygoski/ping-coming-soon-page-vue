@@ -1,0 +1,160 @@
+@use './var';
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    position: relative;
+    &__logo {
+      width: 15%;
+    }
+    &__title {
+      color: var.$gray;
+      margin-top: 1.9rem;
+      font-size: 1.1rem;
+      span {
+        color: var.$darkBlue;
+        font-weight: 700;
+      }
+    }
+    &__desc {
+      font-size: .6rem;
+      margin-top: .75rem;
+      color: var.$darkBlue;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 280px;
+      margin-top: 1.75rem;
+      gap: .5rem;
+      &-email, &-btn {
+        width: 100%;
+        height: 38px;
+        border-radius: 2rem;
+        font-size: .6rem;
+        border: 1px solid transparent;
+        &::placeholder {
+          color: var.$paleBlue;
+        }
+      }
+      &-email {
+        padding-left: 1.2rem;
+        border: 1px solid var.$paleBlue;
+      }
+      &-error {
+        font-size: .5rem;
+        color: var.$lightRed;
+      }
+      &-btn {
+        font-weight: 600;
+        color: #fff;
+        background: var.$blue;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+          filter: contrast(70%);
+        }
+      }
+    }
+    &__dashboard {
+      margin-top: 3.5rem;
+      margin-bottom: 5.8rem;
+      width: 85%;
+    }
+    &__list {
+      display: flex;
+      list-style: none;
+      gap: .5rem;
+      margin-bottom: 1.3rem;
+      &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var.$paleBlue;
+        border-radius: 2rem;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        transition: .3s;
+        .icon {
+          color: var.$blue;
+        }
+        &:hover {
+          background: var.$blue;
+        }
+        &:hover .icon {
+          color: #fff;
+        }
+      }
+    }
+    &__copyright-statement {
+      font-size: .5rem;
+      color: var.$paleBlue;
+    }
+    .attribution {
+        font-size: 12px;
+        margin-top: 1rem;
+        a{
+            font-size: 12px;
+            color: var.$blue;
+        }
+    }
+  }
+
+  @media (min-width: 768px){
+    .page {
+      &__logo {
+        width: 90px;
+      }
+      &__title {
+        font-size: 2.4rem;
+        span {
+          font-size: 2.5rem;
+        }
+      }
+      &__desc {
+        font-size: 1rem;
+      }
+      &__form {
+        margin-top: 2.75rem;
+        flex-direction: row;
+        width: 640px;
+        height: 58px;
+        position: relative;
+        &-email, &-btn {
+          height: 100%;
+          font-size: .8rem;
+        }
+        &-btn {
+          width: 48%;
+          box-shadow: 8px 8px 15px rgba(0,0,0,.15);
+        }
+        &-error {
+          font-size: .6rem;
+          position: absolute;
+          bottom: -30%;
+          left: 4%;
+        }
+      }
+      &__dashboard {
+      margin-right: auto;
+      margin-left: auto;
+      width: 45%;
+      margin-bottom: 4rem;
+      }
+      &__copyright-statement {
+        font-size: .75rem;
+        color: var.$gray;
+      }
+    }
+  }
+
+    .input_error {
+        outline: 2px solid var.$lightRed;
+        outline-offset: -2px;
+    }
+
+    
